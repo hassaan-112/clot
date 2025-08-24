@@ -1,3 +1,4 @@
+import 'package:clot/res/routes/routeNames.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -104,15 +105,20 @@ class _DetailScreenState extends State<DetailScreen> {
       ),
       bottomNavigationBar:                     Padding(
         padding: EdgeInsets.only(left: 24.w,right: 24.w,bottom: 30.h),
-        child: Container(
+        child: GestureDetector(
+          onTap: (){
+            Get.toNamed(RouteName.bag);
+          },
+          child: Container(
 
-          width: double.infinity,
-          height: 56.h,
-          decoration: BoxDecoration(color: AppColors.primary,borderRadius: BorderRadius.circular(100.r)),
-          child: Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 16.w),
-            child: Row(crossAxisAlignment: CrossAxisAlignment.center,children: [Text("\$148",style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.w700,color: AppColors.white)),Spacer(),                    Text("Add to Bag",style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: AppColors.white),),
-            ],),
+            width: double.infinity,
+            height: 56.h,
+            decoration: BoxDecoration(color: AppColors.primary,borderRadius: BorderRadius.circular(100.r)),
+            child: Padding(
+              padding:  EdgeInsets.symmetric(horizontal: 16.w),
+              child: Row(crossAxisAlignment: CrossAxisAlignment.center,children: [Text("\$148",style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.w700,color: AppColors.white)),Spacer(),                    Text("Add to Bag",style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: AppColors.white),),
+              ],),
+            ),
           ),
         ),
       ),

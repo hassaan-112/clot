@@ -1,4 +1,7 @@
 import 'package:clot/view/homeScreen.dart';
+import 'package:clot/view/notifications.dart';
+import 'package:clot/view/orders.dart';
+import 'package:clot/view/profile.dart';
 import 'package:flutter/material.dart' hide Notification;
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -22,7 +25,7 @@ class _BottomNavState extends State<BottomNav> {
   }
   @override
   Widget build(BuildContext context) {
-    List<Widget> pages = [HomeScreen(),];
+    List<Widget> pages = [HomeScreen(),Notifications(),OrdersScreen(),Profile()];
     return Scaffold(
       body: Obx(() => IndexedStack(index: _navBarVM.index.value, children: pages)),
       bottomNavigationBar: Obx(

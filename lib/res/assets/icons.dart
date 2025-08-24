@@ -19,6 +19,8 @@ class IconRoutes{
   static final String orderActive="$baseUrl/orderActive.svg";
   static final String profile="$baseUrl/profile.svg";
   static final String profileActive="$baseUrl/profileActive.svg";
+  static final String bell="$baseUrl/belll.jpg";
+
 
 
 

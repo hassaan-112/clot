@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(height: 40.h,width: 72.w,decoration: BoxDecoration(color: AppColors.grey,borderRadius: BorderRadius.circular(100.r)),child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,children: [Text("Men",style: Theme.of(context).textTheme.bodySmall),Transform.rotate(
                         angle: 4.7,
                         child: SvgPicture.asset(IconRoutes.back,height: 15.h,width: 15.w,))]),),
-                        CircleAvatar(radius: 20.h,backgroundColor: AppColors.primary,child: SvgPicture.asset(IconRoutes.bag),)
+                        GestureDetector(onTap: (){Get.toNamed(RouteName.bag);},child: CircleAvatar(radius: 20.h,backgroundColor: AppColors.primary,child: SvgPicture.asset(IconRoutes.bag),))
                       ],
                     ),
 

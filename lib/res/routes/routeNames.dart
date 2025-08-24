@@ -6,9 +6,9 @@ class RouteName{
   static const String homeScreen = "/homeScreen";
   static const String detailScreen = "/detailScreen";
   static const String bottomnav = "/bottomNav";
-  static const String LocalImageDetailScreen = "/localImageDetailScreen";
-  static const String fireStoreScreen = "/fireStoreScreen";
-  static const String resetPassword = "/resetPassword";
+  static const String bag = "/bag";
+  static const String checkout = "/checkout";
+  static const String done = "/done";
   static const String addImageScreen = "/addImageScreen";
 
 

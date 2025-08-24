@@ -17,6 +17,9 @@ class ImageRoutes{
   static final String tp4="$baseUrl/tp4.jpg";
   static final String tp5="$baseUrl/tp5.jpg";
   static final String pic= "$baseUrl/oic.jpg";
+  static final String item= "$baseUrl/item.png";
+  static final String master= "$baseUrl/master.jpg";
+  static final String done= "$baseUrl/done.png";
 
 
 
