@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                 primaryColor: AppColors.primary,
                 scaffoldBackgroundColor: AppColors.white,
                 textTheme: TextTheme(
-                  titleLarge: TextStyle(fontFamily: 'Sniglet', fontSize: 48.sp, fontWeight: FontWeight.w500, color: Colors.black),
+                  titleLarge: TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold, color: Colors.black),
 
                   displayLarge: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600, color: AppColors.black),
                   displayMedium: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, color: AppColors.secondaryBlack),

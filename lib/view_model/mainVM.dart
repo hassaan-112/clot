@@ -5,6 +5,10 @@ import 'package:get/get.dart';
 import '../repository/products.dart';
 
 class mainViewModel extends GetxController{
+
+  RxInt index = 0.obs;
+
+
   final searchController = TextEditingController();
   final searchFocusNode = FocusNode();
 
